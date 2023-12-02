@@ -2,15 +2,24 @@
 
 ### 1. REST API
 
-*
+* soap vs rest api 비교
+* 자바 서블릿
+* Keyword
+  * uniform interface
+  * HATEOAS
+  * Metadata
+  * Hyper media control
 
 ### 2. URI
 
-
+* 참고 문서
+  * atom spec
+  * rfc 문서
 
 ### 3. Collection Pattern
 
-###
+* 예시
+  * /posts/1
 
 ### 4. Collection Pattern 적용
 

@@ -34,5 +34,5 @@
 ### 5. Spring Web MVC로 구현
 
 * Exception
-* ExceptionHandler + CRUD 가 통상적으로 포함됨
+* ExceptionHandler + CRUD 가 통상적으로 Controller에포함됨
 

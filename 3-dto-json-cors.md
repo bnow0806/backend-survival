@@ -32,7 +32,7 @@
 
         }
 
-        // Sring이면, Jackson을 이용하여  json으로 변환해준다.
+        // String이면, Jackson을 이용하여  json으로 변환해준다.
     *   public PostDto create(@RequestBody PostDto postDto){
 
         return postDto;

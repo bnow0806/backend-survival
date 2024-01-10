@@ -22,27 +22,37 @@
 2.  Unit Test
 
     * V 모델은 개발 생명 주기의 각 단계와 그에 상응하는 소프트웨어 시험의 각 단계의 관계를 보여준다.&#x20;
-    * 내적 품질
-    * 외적 품질
-    * Test Matrix
-    * JUnit5
-    * NewtonMethod Test 방법?
-    * @Test, @DisplayName(“ ”)
-    * Test Pyramid
+    * 내적 품질 : 소프트웨어 디자인에대한 품질
+    * 외적 품질 : 목적성에 맞는지에대한 품질
+    * Test Matrix : 개발자의 테스팅 영역을 표시
+
+    &#x20;       ![](.gitbook/assets/image.png)
+
+    * JUnit5 : 자동화된 테스트를 지원하는 도구. 이름에 Unit이 들어가지만 단위 테스트만 지원하는 건 아님. 통합 테스트, 심지어는 E2E 테스트를 작성하는데도 사용한다.
+      * @Test, @DisplayName(“ ”),@BeforeEach 등 Annotation을 지원한다.
+    * NewtonMethod Test 방법 예시 소개
+    *   Test Pyramid(bottom to top)
+
+        &#x20; 1\) Unit Tests
+
+        &#x20; 2\) Service Tests\
+        &#x20; 3\) User Interface Tests
 
 
-3.  Spring Test(IntegrationTest)
-
-    * restTemplate.postForLocation(url, postDto); //서버를 실행시켜 테스트하는 방법
-    * String body = restTemplate.getForObject(url, String.class);
-    * MockMvc를 써서 Http 요청을 흉내낼 수 있다.
-    * MockMvc 시 DB 연동이 되는가?
-    * @SpyBeanmock
-    * Mvc.perform & verify
-    * @Mockbean
-    * UnitTest vs IntegrationTest : UnitTest가 더 중요.
-
+3. Spring Test(IntegrationTest)
+   * UnitTest vs IntegrationTest 차이
+   * @SpringbootTest Annotation을 써서 쉽게 테스트할 수 있다.
+     * 서버를 실행시켜 테스트하는 방법
+     * restTemplate.postForLocation(url, postDto);&#x20;
+     * String body = restTemplate.getForObject(url, String.class);
+   * MockMvc를 써서 Http 요청을 흉내낼 수 있다.
+   * SpyBean
+     * `@MockBean`은 `given`에서 선언한 코드 외에는 전부 사용할 수 없습니다.\
+       반면에 `@SpyBean`은 `given`에서 선언한 코드 외에는 전부 실제 객체의 것을 사용합니다.
+     * 참고 : [https://jojoldu.tistory.com/226](https://jojoldu.tistory.com/226)
+   * MockBean : 빠르게 테스트하기 위해 응답값을 임의로채워 넣을 수 있다.
+     * Mvc.perform & verify 수행\
 
 4. TDD
-   * ref 강의 듣기
+   * 자동화된 단위 테스트 코드를 먼저 작성함으로써 테스트가 개발을 이끌어나가도록 하는 방식
 

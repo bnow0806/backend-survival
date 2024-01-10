@@ -32,7 +32,7 @@
 * DTO : 계층 간의 데이터 교환을 위한 객체
 * DAO : DB를 사용해 데이터를 조회하거나 조작하기 위한 객체
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 *   DAO, DTO 분리 이유
 

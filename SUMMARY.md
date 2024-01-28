@@ -6,3 +6,4 @@
 * [3주차 DTO, JSON, CORS](3-dto-json-cors.md)
 * [4주차 Layered Architecture](4-layered-architecture.md)
 * [5주차 DI & Spring Test](5-di-and-spring-test.md)
+* [6주차 Database](6-database.md)

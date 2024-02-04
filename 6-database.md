@@ -45,7 +45,7 @@
 *   ERD : ER 모델을 시각화하는 방법
 
     <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-* Cardinality(data modeling) : 한 테이블의 행과 다른 테이블 행간의 수치 관계. 일대일, 일대다, 다대다 등이 있음음
+* Cardinality(data modeling) : 한 테이블의 행과 다른 테이블 행간의 수치 관계. 일대일, 일대다, 다대다 등이 있음
 
 5. JDBC
 
@@ -91,4 +91,32 @@ while (resultSet.next()) {
 6. JDBC Template : JDBC 코어 페키지의 중심 클래스
 
 * Spring Initializer : spring dev tools, jdbc api, postgresql 의존성 선택
-* Command Line Runner을 통해 시험 가능
+* Command Line Runner을 통해 JDBC 동작시험 가능
+
+```
+@Component
+public class AppRunner implements CommandLineRunner {
+	private final JdbcTemplate jdbcTemplate;
+
+	public AppRunner(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		String sql = "SELECT name FROM people";
+		
+		jdbcTemplate.query(sql, resultSet -> {
+			while (resultSet.next()) {
+				String name = resultSet.getString("name");
+				System.out.println(name);
+			}
+		});
+	}
+}
+```
+
+* TransactionTemplate  안에  jdbcTemplate 을 넣어서 트랜잭션을 관리할 수 있다.
+
+
+

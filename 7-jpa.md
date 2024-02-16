@@ -2,8 +2,6 @@
 
 7주차
 
-
-
 1. ORM
 
 * SQL 문 자동 생성. 비지니스 로직에 집중 가능
@@ -40,9 +38,7 @@
 * 문제점
   * persistence.xml 추가
   * EntityManager 불편
-  * Transaction 관리 불편
-
-\
+  * Transaction 관리 불편\
 
 
 5. Spring Data JPA

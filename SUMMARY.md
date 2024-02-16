@@ -7,3 +7,4 @@
 * [4주차 Layered Architecture](4-layered-architecture.md)
 * [5주차 DI & Spring Test](5-di-and-spring-test.md)
 * [6주차 Database](6-database.md)
+* [7주차 JPA](7-jpa.md)

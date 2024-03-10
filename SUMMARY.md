@@ -9,3 +9,4 @@
 * [6주차 Database](6-database.md)
 * [7주차 JPA](7-jpa.md)
 * [8주차 DDD](8-ddd.md)
+* [9주차 Hexagonal Architecture](9-hexagonal-architecture.md)
